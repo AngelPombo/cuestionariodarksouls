@@ -1,0 +1,67 @@
+.cuestionario-main{
+    background-color: black;
+    color: white;
+    height: 100vh;
+    background-image: url("../images/backgroundimg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.cuestionario-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cuestionario-h3{
+    text-align: center;
+    font-size: 2rem;
+    padding-top: 2rem;
+    padding-bottom: 4rem;
+}
+
+.cuestionario-titulo-pregunta{
+    text-align: center;
+    font-size: 3rem;
+    padding-bottom: 6rem;
+}
+
+.respuestas-div{
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 10rem;
+    gap: 2rem;
+}
+
+.respuestas-btn{
+    border: none;
+    padding: 2rem;
+    border-radius: 14px;
+    height: 6rem;
+    width: 12rem;
+    background-color: rgba(255, 255, 255, 0.261);
+    font-size: 1rem;
+}
+
+.respuestas-btn:hover{
+    background-color: rgb(248, 248, 152);
+}
+
+.puntuacion-p{
+    text-align: center;
+    font-size: 2rem;
+    padding-bottom: 2rem;
+}
+
+.cuestionario-finish-h2{
+    text-align: center;
+    padding-top: 4rem;
+    padding-bottom: 3rem;
+    font-size: 3rem;
+}
+
+.cuestionario-finish-score{
+    text-align: center;
+    font-size: 2rem;
+    padding-bottom: 2rem;
+}

@@ -1,0 +1,39 @@
+.homepage-section{
+    background-color: black;
+    color: white;
+    height: 100vh;
+    background-image: url("../images/backgroundimg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.homepage-h1{
+    text-align: center;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    font-size: 2.5rem;
+}
+
+.homepage-p{
+    text-align: center;
+    padding-bottom: 5rem;
+    font-size: 1.5rem;
+}
+
+.homepage-buttons-div{
+    display: flex;
+    justify-content: space-around;
+}
+
+.homepage-btn{
+    border:none;
+    padding: 3rem;
+    border-radius: 14px;
+    background-color: rgba(255, 255, 255, 0.261);
+    font-size: 1rem;
+    width: 12rem;
+}
+
+.homepage-btn:hover{
+    background-color: orange;
+}
