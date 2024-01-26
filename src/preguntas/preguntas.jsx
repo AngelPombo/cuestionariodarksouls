@@ -27,7 +27,7 @@ const preguntas = [
         ]
     },
     {
-        titulo: "¿En que juego se avivan las hogueras usando humanidades?",
+        titulo: "¿En que juego es necesaria la humanidad para avivar la hoguera?",
         opciones: [
             {textoRespuesta: "Dark Souls", isCorrect: true},
             {textoRespuesta: "Dark Souls 2", isCorrect: false},
