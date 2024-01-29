@@ -1,11 +1,12 @@
 import { Link } from "react-router-dom";
+import "./Clasificaciones.css"
 
 function Clasificaciones(){
 
     return(
-        <section>
-            <h3>Esta es la tabla de clasificaciones</h3>
-            <Link to="/"><button>Volver al inicio</button></Link>
+        <section className="clasificaciones-main-section">
+            <h3 className="clasificaciones-h3">Funcionalidad en desarrollo</h3>
+            <Link to="/"><button className="clasificaciones-btn">Volver al inicio</button></Link>
         </section>
         )
 

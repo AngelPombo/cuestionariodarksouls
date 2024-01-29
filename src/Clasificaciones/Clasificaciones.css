@@ -1,0 +1,33 @@
+.clasificaciones-main-section{
+    background-color: black;
+    color: white;
+    height: 100vh;
+    background-image: url("../images/backgroundimg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.clasificaciones-h3{
+    text-align: center;
+    padding-top: 5rem;
+    font-size: 3rem;
+    padding-bottom: 4rem;
+}
+
+.clasificaciones-btn{
+    border: none;
+    padding: 2rem;
+    border-radius: 14px;
+    height: 6rem;
+    width: 12rem;
+    background-color: rgba(255, 255, 255, 0.261);
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.clasificaciones-btn:hover{
+    background-color: orange;
+}
