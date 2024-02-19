@@ -27,30 +27,21 @@ const preguntas = [
         ]
     },
     {
-        titulo: "¿En que juego es necesaria la humanidad para avivar la hoguera?",
-        opciones: [
-            {textoRespuesta: "Dark Souls", isCorrect: true},
-            {textoRespuesta: "Dark Souls 2", isCorrect: false},
-            {textoRespuesta: "Dark souls 3", isCorrect: false},
-            {textoRespuesta: "Elden Ring", isCorrect: false}
-        ]
-    },
-    {
-        titulo: "¿Cual es el único juego en el que no tenemos frascos de Estus?",
-        opciones: [
-            {textoRespuesta: "Dark Souls", isCorrect: false},
-            {textoRespuesta: "Dark Souls 2", isCorrect: false},
-            {textoRespuesta: "Dark souls 3", isCorrect: false},
-            {textoRespuesta: "Elden Ring", isCorrect: true}
-        ]
-    },
-    {
         titulo: "¿Cual de los siguientes títulos hace referencia al DLC del Dark Souls 1?",
         opciones: [
             {textoRespuesta: "Scholar of the First Sin", isCorrect: false},
             {textoRespuesta: "Artorias to the Abbys", isCorrect: true},
             {textoRespuesta: "The Ringed city", isCorrect: false},
             {textoRespuesta: "Ashes of Ariandel", isCorrect: false}
+        ]
+    },
+    {
+        titulo: "¿En que juego es necesaria la humanidad para avivar la hoguera?",
+        opciones: [
+            {textoRespuesta: "Dark Souls", isCorrect: true},
+            {textoRespuesta: "Dark Souls 2", isCorrect: false},
+            {textoRespuesta: "Dark souls 3", isCorrect: false},
+            {textoRespuesta: "Elden Ring", isCorrect: false}
         ]
     },
     {
@@ -72,6 +63,15 @@ const preguntas = [
         ]
     },
     {
+        titulo: "¿Cual es el único juego en el que no tenemos frascos de Estus?",
+        opciones: [
+            {textoRespuesta: "Dark Souls", isCorrect: false},
+            {textoRespuesta: "Dark Souls 2", isCorrect: false},
+            {textoRespuesta: "Dark souls 3", isCorrect: false},
+            {textoRespuesta: "Elden Ring", isCorrect: true}
+        ]
+    },
+    {
         titulo: "¿Como se llama en Dark Souls 1 a la clase de personaje que empieza la aventura en taparrabos?",
         opciones: [
             {textoRespuesta: "Ladrón", isCorrect: false},
@@ -84,7 +84,7 @@ const preguntas = [
         titulo: "¿Cual de los siguientes juegos no pertenece a FromSoftware?",
         opciones: [
             {textoRespuesta: "Dark Souls 2", isCorrect: false},
-            {textoRespuesta: "Sekiro: Shadows die twice", isCorrect: false},
+            {textoRespuesta: "Sekiro", isCorrect: false},
             {textoRespuesta: "Elden Ring", isCorrect: false},
             {textoRespuesta: "Lies of Pi", isCorrect: true}
         ]
