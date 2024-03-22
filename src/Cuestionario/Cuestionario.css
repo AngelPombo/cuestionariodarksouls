@@ -1,4 +1,105 @@
 .cuestionario-main{
+    background-image: url("../images/backgroundimg.jpg");
+    color: whitesmoke;
+    background-size: cover;
+    min-height: 100vh;
+}
+
+.cuestionario-section{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+}
+
+.cuestionario-h3{
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.cuestionario-titulo-pregunta{
+    text-align: center;
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.respuestas-div{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+}
+
+.respuestas-btn{
+    border: 1px solid whitesmoke;
+    padding: 1rem;
+    border-radius: 14px;
+    min-height: 3rem;
+    min-width: 10rem;
+    cursor: pointer;
+    background-color: rgba(255, 197, 88, 0.941);
+    color: black;
+}
+
+.puntuacion-homepagebtn-div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tiempo-restante-p{
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.puntuacion-p{
+    font-size: 1.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.continuar-btn{
+    border:1px solid whitesmoke;
+    padding: 1rem;
+    border-radius: 14px;
+    background-color: rgba(71, 255, 77, 0.829);
+    font-size: 1rem;
+    color: whitesmoke;
+    margin-bottom: 0.5rem;
+    min-width: 10rem;
+}
+
+.correct{
+    background-color: rgb(71, 255, 77);
+}
+
+.incorrect{
+    background-color: tomato;
+}
+
+.cuestionario-finish-h2{
+    text-align: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    font-size: 2rem;
+}
+
+.cuestionario-finish-score{
+    text-align: center;
+    font-size: 2rem;
+    padding-bottom: 2rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-bottom: 2rem;
+    border: 1px solid whitesmoke;
+    border-radius: 14px;
+    background-color: rgba(255, 197, 88, 0.941);
+    padding: 1rem;
+    text-align: center;
+}
+
+/* .cuestionario-main{
     background-color: black;
     color: white;
     height: 100vh;
@@ -109,5 +210,5 @@
 .incorrect:hover{
     background-color: tomato;
 }
-
+ */
 

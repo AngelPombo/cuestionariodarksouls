@@ -8,7 +8,7 @@ function Cuestionario(){
     const[preguntaActual, setPreguntaActual] = useState(0);
     const[puntuacion, setPuntuacion] = useState(0);
     const[isFinished, setIsFinished] = useState(false);
-    const[remainingTime, setRemainingTime] = useState(20);
+    const[remainingTime, setRemainingTime] = useState(30);
     const[areDisabled, setAreDisabled] = useState(false);
 
     function handleAnswerSubmit(isCorrect, e){
@@ -23,7 +23,7 @@ function Cuestionario(){
                 setIsFinished(true);
             } else{
                 setPreguntaActual(preguntaActual + 1)
-                setRemainingTime(20);
+                setRemainingTime(30);
             }
         }, 1000)
         
@@ -65,13 +65,13 @@ function Cuestionario(){
                                     <p className="tiempo-restante-p">Tiempo restante: {remainingTime}</p>
                                 :
                                     <button className="continuar-btn" onClick={() =>{
-                                        setRemainingTime(20);
+                                        setRemainingTime(30);
                                         setAreDisabled(false);
                                         setPreguntaActual(preguntaActual +1);
                                     }
                                     }>Continuar</button>
                             }
-                            <p className="puntuacion-p">Puntuacion: {puntuacion}</p>
+                            <p className="puntuacion-p">Puntuación: {puntuacion}</p>
                             <Link to="/"><button className="homepage-btn">Volver al inicio</button></Link>
                         </div>
                     </section>

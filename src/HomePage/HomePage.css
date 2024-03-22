@@ -1,4 +1,49 @@
 .homepage-section{
+    display: flex;
+    flex-direction: column;
+    gap:2rem;
+    background-image: url("../images/backgroundimg.jpg");
+    color: whitesmoke;
+    background-size: cover;
+    min-height: 100vh;
+    padding: 1rem;
+    align-items: center;
+    font-size: 20px;
+}
+
+.homepage-h1{
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.homepage-p-div{
+    display: flex;
+    flex-direction: column;
+    gap:1rem;
+    border: 1px solid whitesmoke;
+    border-radius: 14px;
+    background-color: rgba(255, 197, 88, 0.941);
+    padding: 1rem;
+    text-align: center;
+}
+
+.homepage-p2{
+    color: tomato;
+}
+
+.homepage-btn{
+    border:1px solid whitesmoke;
+    padding: 1rem;
+    border-radius: 14px;
+    background-color: rgba(255, 99, 71, 0.829);
+    font-size: 1rem;
+    color: whitesmoke;
+    margin-bottom: 1rem;
+}
+
+
+
+/* .homepage-section{
     background-color: black;
     color: white;
     height: 100vh;
@@ -38,4 +83,4 @@
 
 .homepage-btn:hover{
     background-color: rgba(255, 229, 182, 0.413);
-}
+} */
