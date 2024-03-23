@@ -41,6 +41,7 @@
     cursor: pointer;
     background-color: rgba(255, 197, 88, 0.941);
     color: black;
+    font-size: 1rem;
 }
 
 .puntuacion-homepagebtn-div{
@@ -99,116 +100,56 @@
     text-align: center;
 }
 
-/* .cuestionario-main{
-    background-color: black;
-    color: white;
-    height: 100vh;
-    background-image: url("../images/backgroundimg.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
+@media (min-width: 768px){
+    .cuestionario-h3{
+        font-size: 2rem;
+    }
+
+    .cuestionario-titulo-pregunta{
+        font-size: 3rem;
+    }
+
+    .respuestas-btn{
+        padding: 1rem;
+        min-width: 20rem;
+        font-size: 2rem;
+    }
+
+    .continuar-btn{
+        margin-top: 1rem;
+        padding: 2rem;
+        font-size: 2rem;
+    }
+
+    .puntuacion-p{
+        font-size: 3rem;
+        padding-top: 1rem;
+    }
+
+    .cuestionario-finish-h2{
+        margin-top: 2rem;
+        font-size: 3rem;
+    }
+
+    .cuestionario-finish-score{
+        font-size: 3rem;
+    }
 }
 
-.cuestionario-section{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
+/* @media (min-width: 1024px){
+    .respuestas-btn{
+        cursor: pointer;
+    }
 
-.cuestionario-h3{
-    text-align: center;
-    font-size: 2rem;
-    padding-top: 2rem;
-    padding-bottom: 4rem;
-}
+    .respuestas-btn:hover{
+        background-color: rgba(254, 181, 46, 0.941);
+    }
 
-.cuestionario-titulo-pregunta{
-    text-align: center;
-    font-size: 3rem;
-    padding-bottom: 6rem;
-}
+    .continuar-btn{
+        cursor: pointer;
+    }
 
-.respuestas-div{
-    display: flex;
-    justify-content: space-around;
-    padding-bottom: 10rem;
-    gap: 2rem;
-}
-
-.respuestas-btn{
-    border: none;
-    padding: 2rem;
-    border-radius: 14px;
-    height: 6rem;
-    width: 12rem;
-    background-color: rgba(255, 255, 255, 0.261);
-    font-size: 1rem;
-    cursor: pointer;
-}
-
-.respuestas-btn:hover{
-    background-color: rgba(255, 255, 255, 0.54);
-}
-
-.puntuacion-homepagebtn-div{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.tiempo-restante-p{
-    text-align: center;
-    font-size: 3rem;
-    padding-bottom: 1rem;
-}
-
-.puntuacion-p{
-    text-align: center;
-    font-size: 2rem;
-    padding-bottom: 2rem;
-}
-
-.cuestionario-finish-h2{
-    text-align: center;
-    padding-top: 4rem;
-    padding-bottom: 3rem;
-    font-size: 3rem;
-}
-
-.cuestionario-finish-score{
-    text-align: center;
-    font-size: 2rem;
-    padding-bottom: 2rem;
-}
-
-.continuar-btn{
-    border: none;
-    padding: 2rem;
-    border-radius: 14px;
-    height: 6rem;
-    width: 12rem;
-    background-color: rgba(255, 255, 255, 0.261);
-    font-size: 1rem;
-    margin-bottom: 1rem;
-}
-
-.continuar-btn:hover{
-    background-color: orange;
-}
-
-.correct{
-    background-color: green;
-}
-
-.correct:hover{
-    background-color: green;
-}
-
-.incorrect{
-    background-color: tomato;
-}
-
-.incorrect:hover{
-    background-color: tomato;
-}
- */
-
+    .continuar-btn:hover{
+        background-color: rgba(39, 255, 46, 0.829);
+    }
+} */
