@@ -134,22 +134,10 @@
     .cuestionario-finish-score{
         font-size: 3rem;
     }
+
+    .tiempo-restante-p{
+        margin-top: 1rem;
+        font-size: 40px;
+    }
 }
 
-/* @media (min-width: 1024px){
-    .respuestas-btn{
-        cursor: pointer;
-    }
-
-    .respuestas-btn:hover{
-        background-color: rgba(254, 181, 46, 0.941);
-    }
-
-    .continuar-btn{
-        cursor: pointer;
-    }
-
-    .continuar-btn:hover{
-        background-color: rgba(39, 255, 46, 0.829);
-    }
-} */
