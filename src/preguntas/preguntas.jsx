@@ -88,6 +88,96 @@ const preguntas = [
             {textoRespuesta: "Elden Ring", isCorrect: false},
             {textoRespuesta: "Lies of Pi", isCorrect: true}
         ]
+    },
+    {
+        titulo: "¿En Darkest Dungeon como se llama la ciudad principal?",
+        opciones: [
+            {textoRespuesta: "La ciudadela", isCorrect: false},
+            {textoRespuesta: "El Pueblo", isCorrect: false},
+            {textoRespuesta: "La Villa", isCorrect: false},
+            {textoRespuesta: "El Feudo", isCorrect: true}
+        ]
+    },
+    {
+        titulo: "¿Cual de los siguientes personajes de League of Legends es un yordle?",
+        opciones: [
+            {textoRespuesta: "Tristana", isCorrect: true},
+            {textoRespuesta: "Yasuo", isCorrect: false},
+            {textoRespuesta: "Riven", isCorrect: false},
+            {textoRespuesta: "Ashe", isCorrect: false}
+        ]
+    },
+    {
+        titulo: "¿Que tipo de juego es League of Legends?",
+        opciones: [
+            {textoRespuesta: "Shooter", isCorrect: false},
+            {textoRespuesta: "MOBA", isCorrect: true},
+            {textoRespuesta: "MMO", isCorrect: false},
+            {textoRespuesta: "RogueLike", isCorrect: false}
+        ]
+    },
+    {
+        titulo: "¿En que año se lanzó a la venta el juego Los Sims?",
+        opciones: [
+            {textoRespuesta: "1998", isCorrect: false},
+            {textoRespuesta: "2003", isCorrect: false},
+            {textoRespuesta: "2000", isCorrect: true},
+            {textoRespuesta: "2007", isCorrect: false}
+        ]
+    },
+    {
+        titulo: "¿Cómo se llama el protagonista de la saga Halo?",
+        opciones: [
+            {textoRespuesta: "Master Chief", isCorrect: true},
+            {textoRespuesta: "Solid Snake", isCorrect: false},
+            {textoRespuesta: "Duke Nukem", isCorrect: false},
+            {textoRespuesta: "Terminator", isCorrect: false}
+        ]
+    },
+    {
+        titulo: "¿Qué héroe empuña la llave espada en Kingdom Hearts?",
+        opciones: [
+            {textoRespuesta: "Mickey", isCorrect: false},
+            {textoRespuesta: "Donald", isCorrect: false},
+            {textoRespuesta: "Sora", isCorrect: true},
+            {textoRespuesta: "Daniel", isCorrect: false}
+        ]
+    },
+    {
+        titulo: "¿Cual es el nombre del animatrónico amarillo en Five Nights At Freddys?",
+        opciones: [
+            {textoRespuesta: "Chica", isCorrect: true},
+            {textoRespuesta: "Freddy", isCorrect: false},
+            {textoRespuesta: "Foxy", isCorrect: false},
+            {textoRespuesta: "Mangle", isCorrect: false}
+        ]
+    },
+    {
+        titulo: "¿Qué consola de Nintendo presentaba el innovador controlador de pantalla táctil?",
+        opciones: [
+            {textoRespuesta: "Nintendo 64", isCorrect: false},
+            {textoRespuesta: "Nintendo DS", isCorrect: true},
+            {textoRespuesta: "Game Boy Advance", isCorrect: false},
+            {textoRespuesta: "Game Boy Color", isCorrect: false}
+        ]
+    },
+    {
+        titulo: "¿De que compañía de juegos provienen Diablo y World Of Warcraft?",
+        opciones: [
+            {textoRespuesta: "Blizzard", isCorrect: true},
+            {textoRespuesta: "Riot Games", isCorrect: false},
+            {textoRespuesta: "Epic Games", isCorrect: false},
+            {textoRespuesta: "Bethesda", isCorrect: false}
+        ]
+    },
+    {
+        titulo: "¿En qué año se publicó el videojuego Portal?",
+        opciones: [
+            {textoRespuesta: "2013", isCorrect: false},
+            {textoRespuesta: "2000", isCorrect: false},
+            {textoRespuesta: "2007", isCorrect: true},
+            {textoRespuesta: "2017", isCorrect: false}
+        ]
     }
 
 ]
