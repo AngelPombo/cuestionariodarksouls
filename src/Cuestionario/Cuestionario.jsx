@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import preguntas from "../preguntas/preguntas";
 import { useState, useEffect } from "react";
-import "./cuestionario.css";
+import "./Cuestionario.css";
 
 function shuffleArray(array) {
   const shuffledArray = [...array];
