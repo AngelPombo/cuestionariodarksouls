@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import preguntas from "../preguntas/preguntas";
 import { useState, useEffect } from "react";
 import "./Cuestionario.css";
+import usePuntuacion from "../hooks/usePuntuacion"; 
 
 function shuffleArray(array) {
   const shuffledArray = [...array];
@@ -15,26 +16,29 @@ function shuffleArray(array) {
 function Cuestionario() {
   const [preguntasAleatorias, setPreguntasAleatorias] = useState([]);
   const [preguntaActual, setPreguntaActual] = useState(0);
-  const [puntuacion, setPuntuacion] = useState(0);
   const [isFinished, setIsFinished] = useState(false);
   const [remainingTime, setRemainingTime] = useState(30);
   const [areDisabled, setAreDisabled] = useState(false);
+  const [puntuacionTemporal, setPuntuacionTemporal] = useState(0); 
+
+  // Utiliza el hook usePuntuacion
+  const [puntuacion, actualizarPuntuacion] = usePuntuacion();
 
   useEffect(() => {
-    // Mezcla las preguntas al inicio del juego y selecciona solo las primeras 10
     const preguntasMezcladas = shuffleArray(preguntas).slice(0, 10);
     setPreguntasAleatorias(preguntasMezcladas);
   }, []);
 
   function handleAnswerSubmit(isCorrect, e) {
     if (isCorrect === true) {
-      setPuntuacion(remainingTime + puntuacion);
+      setPuntuacionTemporal(remainingTime + puntuacionTemporal);
     }
 
     e.target.classList.add(isCorrect ? "correct" : "incorrect");
 
     setTimeout(() => {
       if (preguntaActual === preguntasAleatorias.length - 1) {
+        actualizarPuntuacion(puntuacionTemporal); 
         setIsFinished(true);
       } else {
         setPreguntaActual(preguntaActual + 1);
@@ -58,7 +62,7 @@ function Cuestionario() {
         <section className="cuestionario-section">
           <h2 className="cuestionario-finish-h2">¡Has terminado el juego!</h2>
           <h3 className="cuestionario-finish-score">
-            Tu puntuación final es de: {puntuacion}
+            Tu puntuación final es de: {puntuacionTemporal}
           </h3>
           <Link to="/">
             <button className="homepage-btn">Volver al inicio</button>
@@ -107,7 +111,7 @@ function Cuestionario() {
                 Continuar
               </button>
             )}
-            <p className="puntuacion-p">Puntuación: {puntuacion}</p>
+            <p className="puntuacion-p">Puntuación: {puntuacionTemporal}</p>
             <Link to="/">
               <button className="homepage-btn">Volver al inicio</button>
             </Link>

@@ -178,7 +178,79 @@ const preguntas = [
             {textoRespuesta: "2007", isCorrect: true},
             {textoRespuesta: "2017", isCorrect: false}
         ]
-    }
+    },
+    {
+        titulo: "¿Cual es el nombre del protagonista del juego Hades?",
+        opciones: [
+            {textoRespuesta: "Zagreo", isCorrect: true},
+            {textoRespuesta: "Hades", isCorrect: false},
+            {textoRespuesta: "Zeus", isCorrect: false},
+            {textoRespuesta: "Kratos", isCorrect: false}
+        ]
+    },
+    {
+        titulo: "¿Cual es el jefe principal en The Binding Of Isaac?",
+        opciones: [
+            {textoRespuesta: "Satan", isCorrect: false},
+            {textoRespuesta: "Mom", isCorrect: true},
+            {textoRespuesta: "Isaac", isCorrect: false},
+            {textoRespuesta: "Krampus", isCorrect: false}
+        ]
+    },
+    {
+        titulo: "¿Quién ganó el GOTY a mejor juego del año en 2023?",
+        opciones: [
+            {textoRespuesta: "Elden Ring", isCorrect: false},
+            {textoRespuesta: "Alan Wake 2", isCorrect: false},
+            {textoRespuesta: "Baldurs Gate 3", isCorrect: true},
+            {textoRespuesta: "Starfield", isCorrect: false}
+        ]
+    },
+    {
+        titulo: "¿Qué género de videojuego es Hollow Knight?",
+        opciones: [
+            {textoRespuesta: "Simulator", isCorrect: false},
+            {textoRespuesta: "RPG", isCorrect: false},
+            {textoRespuesta: "Roguelike", isCorrect: false},
+            {textoRespuesta: "Metroidvania", isCorrect: true}
+        ]
+    },
+    {
+        titulo: "¿Cómo se llama el protagonista de Blasphemous?",
+        opciones: [
+            {textoRespuesta: "El castigador", isCorrect: false},
+            {textoRespuesta: "Judas Tadeo", isCorrect: false},
+            {textoRespuesta: "El Penitente", isCorrect: true},
+            {textoRespuesta: "Lázaro", isCorrect: false}
+        ]
+    },
+    {
+        titulo: "¿Qué tipo de animal es el protagonista de Stray?",
+        opciones: [
+            {textoRespuesta: "Zebra", isCorrect: false},
+            {textoRespuesta: "León", isCorrect: false},
+            {textoRespuesta: "Perro", isCorrect: false},
+            {textoRespuesta: "Gato", isCorrect: true}
+        ]
+    },
+    {
+        titulo: "¿Por quíen fue creado Undertale?",
+        opciones: [
+            {textoRespuesta: "Larian Studios", isCorrect: false},
+            {textoRespuesta: "Toby Fox", isCorrect: true},
+            {textoRespuesta: "Chris Stevenson", isCorrect: false},
+            {textoRespuesta: "Frisk Sans", isCorrect: false}
+        ]
+    },
+    {
+        titulo: "¿Quién es el antagonista principal en Resident Evil 3?",
+        opciones: [
+            {textoRespuesta: "Nemesis", isCorrect: true},
+            {textoRespuesta: "Albert Wesker", isCorrect: false},
+            {textoRespuesta: "Salazar", isCorrect: false},
+            {textoRespuesta: "Tyrant", isCorrect: false}
+        ]
+    },
 
 ]
 
