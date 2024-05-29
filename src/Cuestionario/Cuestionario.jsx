@@ -20,8 +20,6 @@ function Cuestionario() {
   const [remainingTime, setRemainingTime] = useState(30);
   const [areDisabled, setAreDisabled] = useState(false);
   const [puntuacionTemporal, setPuntuacionTemporal] = useState(0); 
-
-  // Utiliza el hook usePuntuacion
   const [puntuacion, actualizarPuntuacion] = usePuntuacion();
 
   useEffect(() => {
@@ -62,7 +60,7 @@ function Cuestionario() {
         <section className="cuestionario-section">
           <h2 className="cuestionario-finish-h2">¡Has terminado el juego!</h2>
           <h3 className="cuestionario-finish-score">
-            Tu puntuación final es de: {puntuacionTemporal}
+            Tu puntuación total es: <span className="final-score-span">{puntuacionTemporal}</span> 
           </h3>
           <Link to="/">
             <button className="homepage-btn">Volver al inicio</button>
@@ -113,7 +111,7 @@ function Cuestionario() {
             )}
             <p className="puntuacion-p">Puntuación: {puntuacionTemporal}</p>
             <Link to="/">
-              <button className="homepage-btn">Volver al inicio</button>
+              <button className="inicio-btn">Volver al inicio</button>
             </Link>
           </div>
         </section>

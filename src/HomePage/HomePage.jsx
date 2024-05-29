@@ -23,7 +23,7 @@ function HomePage() {
         <p className="homepage-p1">Pon a prueba tus conocimientos sobre la industria del videojuego en este quiz de 10 preguntas con 4 opciones de respuesta.</p>
         <p className="homepage-p2">¡Cuanto menos tiempo tardes en acertar cada pregunta más puntos conseguirás!</p>
       </div>
-      <p className="homepage-score-p">Tu puntuación más alta: {puntuacion}</p>
+      <p className="homepage-score-p">Puntuación más alta: <span className="hiscore-span">{puntuacion}</span></p>
       <div className="homepage-buttons-div">
         <Link to="Cuestionario"><button className="homepage-btn">¡Comenzar!</button></Link>
       </div>

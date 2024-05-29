@@ -44,14 +44,17 @@
     color: #FB3C16;
 }
 
-
 .homepage-score-p{
-    border: 1px solid #00ac00cb;
+    border: 1px solid whitesmoke;
     border-radius: 14px;
-    background-color: lightgray;
+    background-color: #FFA245;
     padding: 0.5rem;
     text-align: center;
-    color: #00ac00cb;
+    color: whitesmoke;
+}
+
+.hiscore-span{
+    color: #FB3C16;
 }
 
 .homepage-btn{
@@ -70,8 +73,21 @@
         margin-bottom: 2rem;
     }
 
+    .homepage-logo{
+        width: 5rem;
+        height: 5rem;
+        margin-bottom: 2rem;
+        margin-left: 1rem;
+    }
+
     .homepage-p-div{
         padding: 2rem;
+        font-size: 2rem;
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+
+    .homepage-score-p{
         font-size: 2rem;
     }
 
@@ -83,12 +99,29 @@
 }
 
 @media (min-width: 1024px){
-    .homepage-btn{
-        cursor: pointer;
+
+    .homepage-h1{
+        font-size: 5rem;
     }
 
-    .homepage-btn:hover{
-        background-color: rgba(255, 72, 40, 0.829);
+    .homepage-logo{
+        width: 6rem;
+        height: 6rem;
+    }
+
+    .homepage-p-div{
+        padding: 2rem;
+        font-size: 2.5rem;
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+
+    .homepage-score-p{
+        font-size: 2.5rem;
+    }
+
+    .homepage-btn{
+        cursor: pointer;
     }
 }
 
