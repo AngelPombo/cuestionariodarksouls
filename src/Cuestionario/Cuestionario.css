@@ -48,10 +48,24 @@
     font-size: 1rem;
 }
 
-.puntuacion-homepagebtn-div{
+.respuestas-btn-disabled{
+    border: 1px solid whitesmoke;
+    padding: 1rem;
+    border-radius: 14px;
+    min-height: 3rem;
+    min-width: 10rem;
+    cursor: pointer;
+    background-color: rgba(255, 197, 88, 0.621);
+    color: black;
+    font-size: 1rem;
+}
+
+.cuestionario-btn-div{
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+    gap:1rem;
 }
 
 .tiempo-restante-p{
@@ -60,7 +74,7 @@
     border: 1px solid whitesmoke;
     border-radius: 14px;
     background-color: #FFA245;
-    padding: 1rem;
+    padding: 0.5rem;
 }
 
 .puntuacion-p{
@@ -134,9 +148,17 @@
 
     .cuestionario-titulo-pregunta{
         font-size: 3rem;
+        margin-bottom: 2rem;
+        margin-top: 2rem;
     }
 
     .respuestas-btn{
+        padding: 1rem;
+        min-width: 20rem;
+        font-size: 2rem;
+    }
+
+    .respuestas-btn-disabled{
         padding: 1rem;
         min-width: 20rem;
         font-size: 2rem;
@@ -188,6 +210,15 @@
     .respuestas-btn{
         font-size: 2.5rem;
         margin-bottom: 1rem;
+    }
+
+    .respuestas-btn-disabled{
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+    }
+
+    .tiempo-restante-p{
+        padding: 1rem;
     }
 }
 

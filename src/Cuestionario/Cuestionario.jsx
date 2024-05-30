@@ -100,7 +100,7 @@ function Cuestionario() {
                   ref={(el) => (botonesRef.current[index] = el)}
                   disabled={areDisabled}
                   key={respuesta.textoRespuesta}
-                  className="respuestas-btn"
+                  className={areDisabled ? "respuestas-btn-disabled" : "respuestas-btn"}
                   onClick={(e) => handleAnswerSubmit(respuesta.isCorrect, e)}
                 >
                   {respuesta.textoRespuesta}
@@ -108,7 +108,8 @@ function Cuestionario() {
               );
             })}
           </div>
-          <div className="puntuacion-homepagebtn-div">
+          <p className="puntuacion-p">Puntuación: {puntuacionTemporal}</p>
+          <div className="cuestionario-btn-div">
             {!areDisabled ? (
               <p className="tiempo-restante-p">Tiempo restante: {remainingTime}</p>
             ) : (
@@ -123,9 +124,8 @@ function Cuestionario() {
                 Continuar
               </button>
             )}
-            <p className="puntuacion-p">Puntuación: {puntuacionTemporal}</p>
             <Link to="/">
-              <button className="inicio-btn">Volver al inicio</button>
+              <button className="inicio-btn">Volver a inicio</button>
             </Link>
           </div>
         </section>
