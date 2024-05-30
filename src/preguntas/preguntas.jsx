@@ -27,7 +27,7 @@ const preguntas = [
         ]
     },
     {
-        titulo: "¿De los siguientes juegos cual ha vendido más copias a lo largo de su historia?",
+        titulo: "¿Que juego ha vendido más copias a lo largo de su historia?",
         opciones: [
             {textoRespuesta: "Minecraft", isCorrect: false},
             {textoRespuesta: "Tetris", isCorrect: true},

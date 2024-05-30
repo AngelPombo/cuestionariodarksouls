@@ -172,8 +172,9 @@
 
     .continuar-btn{
         margin-top: 1rem;
-        padding: 2rem;
+        padding: 1rem;
         font-size: 2rem;
+        min-width: 20rem;
     }
 
     .puntuacion-p{
@@ -197,9 +198,9 @@
 
 @media (min-width: 1024px){
     .cuestionario-h3{
-        font-size: 3rem;
-        margin-top: 2rem;
-        margin-bottom: 2rem;
+        font-size: 2.5rem;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
     }
 
     .cuestionario-titulo-pregunta{
@@ -208,17 +209,17 @@
     }
 
     .respuestas-btn{
-        font-size: 2.5rem;
+        font-size: 2rem;
         margin-bottom: 1rem;
     }
 
     .respuestas-btn-disabled{
-        font-size: 2.5rem;
+        font-size: 2rem;
         margin-bottom: 1rem;
     }
 
     .tiempo-restante-p{
-        padding: 1rem;
+        padding: 0.5rem;
     }
 }
 
