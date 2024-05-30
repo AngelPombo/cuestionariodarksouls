@@ -1,8 +1,8 @@
 import { Link } from "react-router-dom";
 import preguntas from "../preguntas/preguntas";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import "./Cuestionario.css";
-import usePuntuacion from "../hooks/usePuntuacion"; 
+import usePuntuacion from "../hooks/usePuntuacion";
 
 function shuffleArray(array) {
   const shuffledArray = [...array];
@@ -19,8 +19,10 @@ function Cuestionario() {
   const [isFinished, setIsFinished] = useState(false);
   const [remainingTime, setRemainingTime] = useState(30);
   const [areDisabled, setAreDisabled] = useState(false);
-  const [puntuacionTemporal, setPuntuacionTemporal] = useState(0); 
+  const [puntuacionTemporal, setPuntuacionTemporal] = useState(0);
   const [puntuacion, actualizarPuntuacion] = usePuntuacion();
+
+  const botonesRef = useRef([]);
 
   useEffect(() => {
     const preguntasMezcladas = shuffleArray(preguntas).slice(0, 10);
@@ -29,14 +31,29 @@ function Cuestionario() {
 
   function handleAnswerSubmit(isCorrect, e) {
     if (isCorrect === true) {
-      setPuntuacionTemporal(remainingTime + puntuacionTemporal);
+      setPuntuacionTemporal(prev => remainingTime + prev);
     }
 
     e.target.classList.add(isCorrect ? "correct" : "incorrect");
 
     setTimeout(() => {
+      // Elimina las clases correct e incorrect de todos los botones
+      botonesRef.current.forEach((btn) => {
+        if (btn) {
+          btn.classList.remove("correct", "incorrect");
+        }
+      });
+
       if (preguntaActual === preguntasAleatorias.length - 1) {
-        actualizarPuntuacion(puntuacionTemporal); 
+        const nuevaPuntuacion = puntuacionTemporal + (isCorrect ? remainingTime : 0);
+        actualizarPuntuacion(nuevaPuntuacion);
+
+        // Actualiza localStorage con la nueva puntuación si es mayor
+        const storedScore = localStorage.getItem("puntuacion");
+        if (!storedScore || nuevaPuntuacion > Number(storedScore)) {
+          localStorage.setItem("puntuacion", nuevaPuntuacion);
+        }
+        
         setIsFinished(true);
       } else {
         setPreguntaActual(preguntaActual + 1);
@@ -60,7 +77,7 @@ function Cuestionario() {
         <section className="cuestionario-section">
           <h2 className="cuestionario-finish-h2">¡Has terminado el juego!</h2>
           <h3 className="cuestionario-finish-score">
-            Tu puntuación total es: <span className="final-score-span">{puntuacionTemporal}</span> 
+            Tu puntuación total es: <span className="final-score-span">{puntuacionTemporal}</span>
           </h3>
           <Link to="/">
             <button className="homepage-btn">Volver al inicio</button>
@@ -77,15 +94,14 @@ function Cuestionario() {
             </h2>
           </div>
           <div className="respuestas-div">
-            {preguntasAleatorias.length > 0 && preguntasAleatorias[preguntaActual].opciones.map((respuesta) => {
+            {preguntasAleatorias.length > 0 && preguntasAleatorias[preguntaActual].opciones.map((respuesta, index) => {
               return (
                 <button
+                  ref={(el) => (botonesRef.current[index] = el)}
                   disabled={areDisabled}
                   key={respuesta.textoRespuesta}
                   className="respuestas-btn"
-                  onClick={(e) =>
-                    handleAnswerSubmit(respuesta.isCorrect, e)
-                  }
+                  onClick={(e) => handleAnswerSubmit(respuesta.isCorrect, e)}
                 >
                   {respuesta.textoRespuesta}
                 </button>
@@ -94,9 +110,7 @@ function Cuestionario() {
           </div>
           <div className="puntuacion-homepagebtn-div">
             {!areDisabled ? (
-              <p className="tiempo-restante-p">
-                Tiempo restante: {remainingTime}
-              </p>
+              <p className="tiempo-restante-p">Tiempo restante: {remainingTime}</p>
             ) : (
               <button
                 className="continuar-btn"
