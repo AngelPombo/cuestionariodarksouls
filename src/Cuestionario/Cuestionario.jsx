@@ -3,6 +3,7 @@ import preguntas from "../preguntas/preguntas";
 import { useState, useEffect, useRef } from "react";
 import "./Cuestionario.css";
 import usePuntuacion from "../hooks/usePuntuacion";
+import confetti from "canvas-confetti"
 
 function shuffleArray(array) {
   const shuffledArray = [...array];
@@ -31,13 +32,13 @@ function Cuestionario() {
 
   function handleAnswerSubmit(isCorrect, e) {
     if (isCorrect === true) {
+      confetti();
       setPuntuacionTemporal(prev => remainingTime + prev);
     }
 
     e.target.classList.add(isCorrect ? "correct" : "incorrect");
 
     setTimeout(() => {
-      // Elimina las clases correct e incorrect de todos los botones
       botonesRef.current.forEach((btn) => {
         if (btn) {
           btn.classList.remove("correct", "incorrect");
@@ -48,7 +49,6 @@ function Cuestionario() {
         const nuevaPuntuacion = puntuacionTemporal + (isCorrect ? remainingTime : 0);
         actualizarPuntuacion(nuevaPuntuacion);
 
-        // Actualiza localStorage con la nueva puntuación si es mayor
         const storedScore = localStorage.getItem("puntuacion");
         if (!storedScore || nuevaPuntuacion > Number(storedScore)) {
           localStorage.setItem("puntuacion", nuevaPuntuacion);

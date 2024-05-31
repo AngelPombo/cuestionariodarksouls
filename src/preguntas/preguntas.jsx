@@ -251,7 +251,132 @@ const preguntas = [
             {textoRespuesta: "Tyrant", isCorrect: false}
         ]
     },
-
+    {
+        titulo: "¿Quién no es un hijo de Bowser?",
+        opciones: [
+            {textoRespuesta: "Morton", isCorrect: false},
+            {textoRespuesta: "Roy", isCorrect: false},
+            {textoRespuesta: "Goomba", isCorrect: true},
+            {textoRespuesta: "Ludwig", isCorrect: false}
+        ]
+    },
+    {
+        titulo: "¿Que consola vendió más copias a lo largo de la historia?",
+        opciones: [
+            {textoRespuesta: "Playstation 2", isCorrect: true},
+            {textoRespuesta: "NES", isCorrect: false},
+            {textoRespuesta: "Playstation", isCorrect: false},
+            {textoRespuesta: "Wii", isCorrect: false}
+        ]
+    },
+    {
+        titulo: "¿Quién protagoniza la saga Metroid?",
+        opciones: [
+            {textoRespuesta: "Epona", isCorrect: false},
+            {textoRespuesta: "Samus Aran", isCorrect: true},
+            {textoRespuesta: "Rogue", isCorrect: false},
+            {textoRespuesta: "Fox", isCorrect: false}
+        ]
+    },
+    {
+        titulo: "¿Cómo se llama el mundo de Super Mario?",
+        opciones: [
+            {textoRespuesta: "Dream Land", isCorrect: false},
+            {textoRespuesta: "Forgotten Land ", isCorrect: false},
+            {textoRespuesta: "Star City", isCorrect: false},
+            {textoRespuesta: "Mushroom Kingdom", isCorrect: true}
+        ]
+    },
+    {
+        titulo: "¿Quién es el antagonista principal en la saga Kirby?",
+        opciones: [
+            {textoRespuesta: "Rey Dedede", isCorrect: true},
+            {textoRespuesta: "Meta Knight", isCorrect: false},
+            {textoRespuesta: "Ridley", isCorrect: false},
+            {textoRespuesta: "Rey Boo", isCorrect: false}
+        ]
+    },
+    {
+        titulo: "¿Qué compañía lanzó y diseñó Pacman?",
+        opciones: [
+            {textoRespuesta: "Nintendo", isCorrect: false},
+            {textoRespuesta: "Sony", isCorrect: false},
+            {textoRespuesta: "Game Freak", isCorrect: false},
+            {textoRespuesta: "Namco", isCorrect: true}
+        ]
+    },
+    {
+        titulo: "¿Quién es el dueño del castillo en Castlevania?",
+        opciones: [
+            {textoRespuesta: "Rey Félix", isCorrect: false},
+            {textoRespuesta: "Conde Drácula", isCorrect: true},
+            {textoRespuesta: "Príncipe Héctor", isCorrect: false},
+            {textoRespuesta: "Conde de Montecristo", isCorrect: false}
+        ]
+    },
+    {
+        titulo: "¿Cuál fue el primer juego 3D de la historia?",
+        opciones: [
+            {textoRespuesta: "Super Mario", isCorrect: false},
+            {textoRespuesta: "Pacman", isCorrect: false},
+            {textoRespuesta: "Battlezone", isCorrect: true},
+            {textoRespuesta: "Call Of Duty", isCorrect: false}
+        ]
+    },
+    {
+        titulo: "¿Cuál fue la segunda Xbox creada por Microsoft?",
+        opciones: [
+            {textoRespuesta: "Xbox 360", isCorrect: true},
+            {textoRespuesta: "Xbox Series X", isCorrect: false},
+            {textoRespuesta: "Xbox Series S", isCorrect: false},
+            {textoRespuesta: "Xbox One X", isCorrect: false}
+        ]
+    },
+    {
+        titulo: "¿Qué compañía inventó la primera consola de videojuegos?",
+        opciones: [
+            {textoRespuesta: "Nintendo", isCorrect: false},
+            {textoRespuesta: "Atari", isCorrect: true},
+            {textoRespuesta: "Namco", isCorrect: false},
+            {textoRespuesta: "Sony", isCorrect: false}
+        ]
+    },
+    {
+        titulo: "¿Qué personaje de Mortal Kombat es un ninja?",
+        opciones: [
+            {textoRespuesta: "Jax", isCorrect: false},
+            {textoRespuesta: "Kung Lao", isCorrect: false},
+            {textoRespuesta: "Sub-zero", isCorrect: true},
+            {textoRespuesta: "Law", isCorrect: false}
+        ]
+    },
+    {
+        titulo: "¿De que color es Knuckles el amigo de Sonic?",
+        opciones: [
+            {textoRespuesta: "Rojo", isCorrect: true},
+            {textoRespuesta: "Naranja", isCorrect: false},
+            {textoRespuesta: "Violeta", isCorrect: false},
+            {textoRespuesta: "Rosa", isCorrect: false}
+        ]
+    },
+    {
+        titulo: "¿Qué tipo de juego es The Forest?",
+        opciones: [
+            {textoRespuesta: "Survival Horror", isCorrect: true},
+            {textoRespuesta: "Gestión de Recursos", isCorrect: false},
+            {textoRespuesta: "Estrategia", isCorrect: false},
+            {textoRespuesta: "Simulación", isCorrect: false}
+        ]
+    },
+    {
+        titulo: "¿Qué nacionalidad tiene Blanka en Street Fighter?",
+        opciones: [
+            {textoRespuesta: "Española", isCorrect: false},
+            {textoRespuesta: "Polaca", isCorrect: false},
+            {textoRespuesta: "Rusa", isCorrect: false},
+            {textoRespuesta: "Brasileña", isCorrect: true}
+        ]
+    },
 ]
 
 
